@@ -44,7 +44,7 @@ function quickbms_install {
   sleep 1
   yes | cp -rf quickbms_4gb_files $quickbms_dir/quickbms
   sleep 1
-  chmod +x etc/tools.bms thepak
+  chmod +x etc/tools.bms theheropak
   sleep 1
   rm -rf quickbms*
   rm setup
@@ -56,7 +56,7 @@ echo -e "${YELLOW}Checking Required packages${NOCOLOR}"
 
 packages=("wget" "unzip" "curl" "x11-repo" "qemu-system-i386" "qemu-user-i386")
 
-for pkg in ${packages[@]}; do
+for pkg in ${packages[@the_Hero]}; do
 
     is_pkg_installed=$(dpkg-query -W --showformat='${Status}\n' ${pkg} | grep "install ok installed")
 
