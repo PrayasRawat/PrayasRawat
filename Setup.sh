@@ -1,5 +1,5 @@
 #!/bin/bash
-# Installer for The_hero.pak
+# Installer for TheHero.pak
 
 source etc/banner
 # Banner Add
@@ -9,14 +9,14 @@ echo "-----------------------"
 quickbms_dir=$PREFIX/share/quickbms
 
 function redirect {
- echo -e "${LIGHTGREEN}STARTING THE_HEROPAK${NOCOLOR}"
+ echo -e "${LIGHTGREEN}STARTING TheHero.pak${NOCOLOR}"
  echo -ne '#####                     (33%)\r'
  sleep 1
  echo -ne '#############             (66%)\r'
  sleep 1
  echo -ne '#######################   (100%)\r'
  echo -ne '\n'
-bash The_Hero777
+bash TheHero.pak
 }
 
 function quickbms_check {
@@ -56,7 +56,7 @@ echo -e "${YELLOW}Checking Required packages${NOCOLOR}"
 
 packages=("wget" "unzip" "curl" "x11-repo" "qemu-system-i386" "qemu-user-i386")
 
-for pkg in ${packages[@the_Hero]}; do
+for pkg in ${packages[@]}; do
 
     is_pkg_installed=$(dpkg-query -W --showformat='${Status}\n' ${pkg} | grep "install ok installed")
 
@@ -64,7 +64,7 @@ for pkg in ${packages[@the_Hero]}; do
         echo -e ${GREEN}${pkg}${NOCOLOR} is installed.
     else [ "" = "${is_pkg_installed}" ];
      echo -e "${RED}No ${pkg}. Setting up ${pkg}.${NOCOLOR}" 
-    pkg install ${pkg install savage_shadow} -y
+    pkg install ${pkg install TheHero.pak } -y
     fi
 done
 quickbms_check
