@@ -2,7 +2,7 @@
 
 source etc/banner
 # Banner Add
-echo -e "executing: ${LIGHTGREEN}TheHeroPAK${NOCOLOR}"
+echo -e "executing: ${LIGHTGREEN}TheHero.pak${NOCOLOR}"
 echo "-----------------------"
 
 if [[ -d "output" ]]
