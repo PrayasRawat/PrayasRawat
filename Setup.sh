@@ -16,7 +16,7 @@ function redirect {
  sleep 1
  echo -ne '#######################   (100%)\r'
  echo -ne '\n'
-bash savage_shadow
+bash The_Hero777
 }
 
 function quickbms_check {
